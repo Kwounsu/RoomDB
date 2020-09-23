@@ -8,9 +8,9 @@ import androidx.room.Query
 
 /**
  * DAO (data access object)
- * Specify SQL queries and associate them with method calls.
+ * : maps method calls to database queries, so that when the Repository calls a method
  *
- * When you are using complex data types, such as Date, you have to supply type converters.
+ * Specify SQL queries and associate them with method calls.
  */
 
 @Dao

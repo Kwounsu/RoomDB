@@ -2,6 +2,11 @@ package com.example.room
 
 import androidx.lifecycle.LiveData
 
+/**
+ * Repository manages one or more data sources.
+ * The Repository exposes methods for the ViewModel to interact with the underlying data provider.
+ * In this app, that backend is a Room database.
+ */
 // Declares the DAO as a private property in the constructor. Pass in the DAO
 // instead of the whole database, because you only need access to the DAO
 class WordRepository(private val wordDao: WordDao) {

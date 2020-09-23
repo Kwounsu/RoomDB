@@ -1,17 +1,20 @@
 package com.example.room
 
-import androidx.appcompat.app.AppCompatActivity
+import android.app.Activity
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import android.app.Activity
-import android.content.Intent
-import android.widget.Toast
-import androidx.appcompat.widget.Toolbar
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
+/**
+ * This activity displays words in a list using a RecyclerView and the WordListAdapter.
+ * Observer observes the words LiveData from the database and is notified when they change.
+ */
 class MainActivity : AppCompatActivity() {
     private val newWordActivityRequestCode = 1
     private lateinit var wordViewModel: WordViewModel

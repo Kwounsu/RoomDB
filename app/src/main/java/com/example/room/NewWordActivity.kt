@@ -8,6 +8,9 @@ import android.text.TextUtils
 import android.widget.Button
 import android.widget.EditText
 
+/**
+ * This activity adds a new word to the list.
+ */
 class NewWordActivity : AppCompatActivity() {
 
     private lateinit var editWordView: EditText
